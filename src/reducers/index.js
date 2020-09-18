@@ -15,3 +15,9 @@ const selectedSongReducer= (selectedSong=null, action) => {
   }
     return selectedSong
 }
+
+
+combineReducers({
+  songs: songsReducer,
+  selectedSong: selectedSongReducer
+})
